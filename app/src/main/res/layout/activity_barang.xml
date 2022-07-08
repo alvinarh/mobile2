@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/AntiqueWhite"
+    tools:context=".BarangActivity">
+
+
+    <TextView
+        android:id="@+id/tv_daftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_75sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:fontFamily="@font/popsem"
+        android:text="DAFTAR BARANG"
+        android:textColor="@color/main"
+        android:textSize="@dimen/_20sdp"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_daftar"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcylrBarang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:padding="@dimen/_16sdp" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/tambah_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="113dp"
+            android:layout_marginBottom="39dp"
+            android:onClick="scanner"
+            android:text="Tambah Barang"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            app:backgroundTint="@color/main"
+            app:icon="@drawable/ic_add"
+            app:iconTint="@android:color/white" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
